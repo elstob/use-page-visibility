@@ -46,5 +46,5 @@ export default function usePageVisibility(cb = () => {}, delay) {
     return () => {
       document.removeEventListener(visibilityChange, handleVisibilityChange);
     };
-  }, []);
+  }, [cd, delay]);
 }
